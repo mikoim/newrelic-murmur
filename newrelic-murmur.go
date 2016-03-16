@@ -54,7 +54,7 @@ func NewMetricaConnectedUsers(client *MumbleClient) *MetricaConnectedUsers {
 }
 
 func (m *MetricaConnectedUsers) GetName() string {
-	return "Connected users"
+	return "Connected Users"
 }
 
 func (m *MetricaConnectedUsers) GetUnits() string {
@@ -108,7 +108,7 @@ func NewMetricaMaximumUsers(client *MumbleClient) *MetricaMaximumUsers {
 }
 
 func (m *MetricaMaximumUsers) GetName() string {
-	return "Maximum users"
+	return "Maximum Users"
 }
 
 func (m *MetricaMaximumUsers) GetUnits() string {

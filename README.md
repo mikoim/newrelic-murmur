@@ -25,8 +25,8 @@ Usage of newrelic-murmur:
 ## Metrics
 
  - Maximum Bitrate
- - Maximum users
- - Connected users
+ - Maximum Users
+ - Connected Users
 
 ## Example
 
