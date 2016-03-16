@@ -22,6 +22,12 @@ Usage of newrelic-murmur:
     	Verbose
 ```
 
+## Metrics
+
+ - Maximum Bitrate
+ - Maximum users
+ - Connected users
+
 ## Example
 
 ```shell
