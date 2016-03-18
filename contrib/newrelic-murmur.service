@@ -1,0 +1,12 @@
+[Unit]
+Description=NewRelic instrumentation for Murmur
+Requires=network.target
+After=network.target murmur.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/newrelic-murmur -license 0123456789abcdef0123456789abcdef01234567
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
