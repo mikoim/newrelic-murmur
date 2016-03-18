@@ -27,6 +27,7 @@ Usage of newrelic-murmur:
  - Maximum Bitrate
  - Maximum Users
  - Connected Users
+ - Total Bandwidth(Estimated): Maximum Bitrate * Connected Users
 
 ## Example
 

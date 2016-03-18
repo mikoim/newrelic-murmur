@@ -80,3 +80,30 @@ func (m *MetricaMaximumUsers) GetValue() (float64, error) {
 
 	return float64(resp.MaximumUsers), err
 }
+
+type MetricaTotalBandwidth struct {
+	Client *MumbleClient
+}
+
+func NewMetricaTotalBandwidth(client *MumbleClient) *MetricaTotalBandwidth {
+	return &MetricaTotalBandwidth{
+		Client: client,
+	}
+}
+
+func (m *MetricaTotalBandwidth) GetName() string {
+	return "Total Bandwidth"
+}
+
+func (m *MetricaTotalBandwidth) GetUnits() string {
+	return "bps"
+}
+
+func (m *MetricaTotalBandwidth) GetValue() (float64, error) {
+	resp, err := m.Client.GetPingResponse()
+	if err != nil {
+		return 0, err
+	}
+
+	return float64(resp.MaximumBitrate * resp.ConnectedUsers), err
+}

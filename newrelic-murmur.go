@@ -35,6 +35,7 @@ func main() {
 	component.AddMetrica(NewMetricaConnectedUsers(client))
 	component.AddMetrica(NewMetricaMaximumBitrate(client))
 	component.AddMetrica(NewMetricaMaximumUsers(client))
+	component.AddMetrica(NewMetricaTotalBandwidth(client))
 
 	plugin.Verbose = *verbose
 	plugin.Run()
