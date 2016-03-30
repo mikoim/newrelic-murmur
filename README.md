@@ -29,6 +29,10 @@ Usage of newrelic-murmur:
  - Connected Users
  - Total Bandwidth(Estimated): Maximum Bitrate * Connected Users
 
+## Environment variable
+
+ - NEW_RELIC_LICENSE_KEY : New Relic license key. ```-license``` flag override it.
+
 ## Example
 
 ```shell
